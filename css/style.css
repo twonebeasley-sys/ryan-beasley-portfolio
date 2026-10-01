@@ -70,7 +70,8 @@ h2{font-size:clamp(1.9rem,3.6vw,2.6rem);font-weight:400}
 .hint{margin:0;color:var(--muted);font-size:.9rem}
 
 /* Gallery — neutral near-white mats so the artwork's own colors stand out */
-.gallery{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;align-items:start}
+.gallery{--cols:3;--gap:2.5rem;list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:3rem var(--gap);align-items:flex-start}
+.piece{flex:0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));min-width:0}
 .piece-btn{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1/1;padding:1.6rem;background:var(--card);border:1px solid var(--line);cursor:zoom-in;transition:box-shadow .25s,transform .25s,border-color .25s}
 .piece-btn:hover{box-shadow:0 22px 40px -22px rgba(0,0,0,.9),0 0 0 1px var(--line-hover);transform:translateY(-3px);border-color:var(--line-hover)}
 .piece-btn picture{display:contents}
@@ -116,7 +117,7 @@ body.lb-open{overflow:hidden}
 
 /* Responsive */
 @media (max-width:960px){
-  .gallery{grid-template-columns:repeat(2,1fr)}
+  .gallery{--cols:2}
   .hero{gap:2.5rem}
 }
 @media (max-width:700px){
@@ -128,7 +129,7 @@ body.lb-open{overflow:hidden}
   .hero-art{margin-right:12px}
   .hero-art::before{inset:12px -12px -12px 12px}
   .work,.about,.contact{padding:3rem 1.25rem}
-  .gallery{grid-template-columns:1fr;gap:2.2rem}
+  .gallery{--cols:1;row-gap:2.2rem}
   .piece-btn{aspect-ratio:auto;padding:1rem}
   .piece-btn img{max-height:none;width:100%;height:auto}
   .about{grid-template-columns:1fr;gap:1.2rem}
