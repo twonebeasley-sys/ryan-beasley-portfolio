@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Beasley — Art Portfolio</title>
+  <meta name="description" content="Art portfolio of Ryan Beasley, a Baltimore middle school artist creating manga- and anime-inspired illustration.">
+  <meta property="og:title" content="Ryan Beasley — Art Portfolio">
+  <meta property="og:description" content="Manga &amp; anime-inspired illustration by Ryan Beasley, Baltimore.">
+  <meta property="og:image" content="images/mystery.jpg">
+  <meta name="theme-color" content="#2d1b4e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%232d1b4e'/%3E%3Ctext x='50' y='66' font-size='48' text-anchor='middle' fill='%23f4f0fa' font-family='Georgia,serif'%3ERB%3C/text%3E%3C/svg%3E">
+  <!-- Google Fonts are optional: if they fail to load, the site falls back to system serif/sans fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to artwork</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-brand" href="#top">Ryan Beasley</a>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <div class="hero-wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow">Art Portfolio · Baltimore, MD</p>
+        <h1 id="hero-title">Ryan Beasley</h1>
+        <!-- EDITABLE: tagline -->
+        <p class="tagline">Manga &amp; anime-inspired illustration</p>
+        <a class="button" href="#work">View the work</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img src="images/mystery-800.webp" alt="" width="800" height="584">
+      </div>
+    </section>
+    </div>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section id="work" class="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <h2 id="work-title">Selected Work</h2>
+        <p class="hint">Select any piece to view it larger.</p>
+      </div>
+
+      <ul class="gallery">
+        <!-- ARTWORK 1 — EDITABLE: title, medium, year (data-* attributes AND visible caption) -->
+        <li class="piece">
+          <button class="piece-btn" type="button"
+                  data-full="images/mystery.webp" data-full-jpg="images/mystery.jpg"
+                  data-title="Mystery?" data-medium="Digital drawing" data-year=""
+                  aria-label="Enlarge “Mystery?”, digital drawing">
+            <picture>
+              <source srcset="images/mystery-800.webp 800w, images/mystery.webp 1600w" sizes="(max-width: 700px) 92vw, 33vw" type="image/webp">
+              <img src="images/mystery-800.jpg" width="800" height="584" loading="lazy"
+                   alt="Digital drawing in moody purples and greys of a manga-style character with messy hair, a thin white halo, rectangular glasses and a cross earring, wearing a top printed with an eye and wings; the word “MYSTERY?” is lettered in the upper left.">
+            </picture>
+          </button>
+          <div class="caption">
+            <h3>Mystery?</h3> <!-- EDITABLE: title -->
+            <p>Digital drawing</p> <!-- EDITABLE: medium / year -->
+          </div>
+        </li>
+
+        <!-- ARTWORK 2 — EDITABLE: title, medium, year -->
+        <li class="piece">
+          <button class="piece-btn" type="button"
+                  data-full="images/nick.webp" data-full-jpg="images/nick.jpg"
+                  data-title="Nick" data-medium="Digital drawing" data-year=""
+                  aria-label="Enlarge “Nick”, digital drawing">
+            <picture>
+              <source srcset="images/nick-800.webp 800w, images/nick.webp 1484w" sizes="(max-width: 700px) 92vw, 33vw" type="image/webp">
+              <img src="images/nick-800.jpg" width="794" height="800" loading="lazy"
+                   alt="Digital anime-style portrait of a boy with shaggy black hair falling over amber eyes, wearing a blue shirt and a round pendant necklace; “Nick!” is lettered in blue beside him, with “So cool” and a small heart doodle above.">
+            </picture>
+          </button>
+          <div class="caption">
+            <h3>Nick</h3> <!-- EDITABLE: title -->
+            <p>Digital drawing</p> <!-- EDITABLE: medium / year -->
+          </div>
+        </li>
+
+        <!-- ARTWORK 3 — EDITABLE: title, medium, year -->
+        <li class="piece">
+          <button class="piece-btn" type="button"
+                  data-full="images/green.webp" data-full-jpg="images/green.jpg"
+                  data-title="Green" data-medium="Colored pencil &amp; marker on paper" data-year=""
+                  aria-label="Enlarge “Green”, colored pencil and marker">
+            <picture>
+              <source srcset="images/green-800.webp 630w, images/green.webp 1261w" sizes="(max-width: 700px) 92vw, 33vw" type="image/webp">
+              <img src="images/green-800.jpg" width="630" height="800" loading="lazy"
+                   alt="Colored pencil and marker portrait of a girl with long green hair, round wire glasses, green eyes and rosy cheeks, with a star drawn in the upper corner.">
+            </picture>
+          </button>
+          <div class="caption">
+            <h3>Green</h3> <!-- EDITABLE: title -->
+            <p>Colored pencil &amp; marker on paper</p> <!-- EDITABLE: medium / year -->
+          </div>
+        </li>
+
+        <!-- TO ADD MORE WORK: copy one <li class="piece"> block above, add the image files to
+             /images (a large ~1600px version and an ~800px version), and update the paths,
+             data-title, data-medium, alt text and caption. -->
+      </ul>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <h2 id="about-title">About the Artist</h2>
+      <div class="about-body">
+        <!-- EDITABLE: About paragraph. Replace [bracketed] text or rewrite in Ryan's own words. -->
+        <p>
+          Ryan Beasley is a middle school student at Mount Royal Middle School in Baltimore, Maryland.
+          Her artwork is inspired by manga and anime, and she works both digitally and by hand with
+          colored pencil and marker. Through character portraits, she explores expression, mood and
+          personal style.
+        </p>
+        <p>
+          Ryan hopes to continue developing her skills in the Visual Arts program at the
+          Baltimore School for the Arts.
+        </p>
+        <!-- OPTIONAL (EDITABLE): add a sentence or two in Ryan's own voice, e.g. favorite artists,
+             what she likes to draw, or what she wants to learn next. Leave out anything not true. -->
+        <!-- <p class="quote">“[Ryan's artist statement goes here.]”</p> -->
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <div class="contact-wrap">
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>For questions about Ryan’s work, please contact her parent, Twone Beasley.</p>
+      <!-- PLACEHOLDER: replace BOTH occurrences of parent-email@example.com below with the real email address. -->
+      <p class="contact-email">
+        <a href="mailto:parent-email@example.com">parent-email@example.com</a>
+        <span class="placeholder-tag">placeholder</span> <!-- PLACEHOLDER: delete this tag once the real email is in -->
+      </p>
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Ryan Beasley. All artwork by Ryan Beasley.</p>
+  </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+    <button class="lb-close" type="button" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Previous artwork">&#8249;</button>
+    <figure class="lb-figure">
+      <img class="lb-img" src="" alt="">
+      <figcaption><span id="lb-title" class="lb-title"></span><span class="lb-medium"></span></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" type="button" aria-label="Next artwork">&#8250;</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
