@@ -181,6 +181,24 @@
           </div>
         </li>
 
+        <!-- ARTWORK 8 — EDITABLE: title, medium, year (data-* attributes AND visible caption) -->
+        <li class="piece">
+          <button class="piece-btn" type="button"
+                  data-full="images/kitty.webp" data-full-jpg="images/kitty.jpg"
+                  data-title="KITTY Magazine" data-medium="Digital drawing, magazine-cover illustration" data-year=""
+                  aria-label="Enlarge “KITTY Magazine”, digital magazine-cover illustration">
+            <picture>
+              <source srcset="images/kitty-800.webp 560w, images/kitty.webp 1120w" sizes="(max-width: 700px) 92vw, 33vw" type="image/webp">
+              <img src="images/kitty-800.jpg" width="560" height="800" loading="lazy"
+                   alt="Digital magazine-cover-style illustration on a dusty-rose background with torn lined-notebook paper behind the figures. The title “KITTY” is lettered in large black and yellow letters across the top. A tall grey-toned character with yellow eyes, a cat-ear clip and a bell choker sticks out their tongue and makes a rock-on sign, wearing a black-cat T-shirt, a spiked wristband and baggy ripped jeans. A smaller character in a black top waves in the lower left. A note reads “Aiden trys to match Jay’s style so that they can be friends easier,” with Japanese katakana for “Aiden,” cat doodles, stars, yellow sparkles and the word “?MYSTERY¿” around them.">
+            </picture>
+          </button>
+          <div class="caption">
+            <h3>KITTY Magazine</h3> <!-- EDITABLE: title -->
+            <p>Digital drawing, magazine-cover illustration</p> <!-- EDITABLE: medium / year -->
+          </div>
+        </li>
+
         <!-- TO ADD MORE WORK: copy one <li class="piece"> block above, add the image files to
              /images (a large ~1600px version and an ~800px version), and update the paths,
              data-title, data-medium, alt text and caption. -->
