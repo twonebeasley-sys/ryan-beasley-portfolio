@@ -199,6 +199,24 @@
           </div>
         </li>
 
+        <!-- ARTWORK 9 — EDITABLE: title (placeholder — the emailed file was just "z.png"), medium, year (data-* attributes AND visible caption) -->
+        <li class="piece">
+          <button class="piece-btn" type="button"
+                  data-full="images/art-3.webp" data-full-jpg="images/art-3.jpg"
+                  data-title="Art 3" data-medium="Digital drawing" data-year=""
+                  aria-label="Enlarge “Art 3”, digital drawing">
+            <picture>
+              <source srcset="images/art-3-800.webp 800w, images/art-3.webp 1600w" sizes="(max-width: 700px) 92vw, 33vw" type="image/webp">
+              <img src="images/art-3-800.jpg" width="800" height="800" loading="lazy"
+                   alt="Digital drawing on a smoky grey, star-speckled background of a character with short blue hair falling over one eye and green eyes, wearing a white frilled sleeveless top with a blue bow, a ruffled white skirt, a translucent blue glove and blue ruffled leg warmers. Glowing purple, pink and green planetary rings with tiny planets circle their head, waist and raised pointing hand.">
+            </picture>
+          </button>
+          <div class="caption">
+            <h3>Art 3</h3> <!-- EDITABLE: title -->
+            <p>Digital drawing</p> <!-- EDITABLE: medium / year -->
+          </div>
+        </li>
+
         <!-- TO ADD MORE WORK: copy one <li class="piece"> block above, add the image files to
              /images (a large ~1600px version and an ~800px version), and update the paths,
              data-title, data-medium, alt text and caption. -->
